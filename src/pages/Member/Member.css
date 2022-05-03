@@ -1,0 +1,291 @@
+.page-title {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.page-title-label {
+  display: block;
+  font-size: 1rem;
+}
+.page-title-btn {
+  margin-left: 1rem;
+  position: relative;
+  top: 1px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+.page-title-btn:hover {
+  background-color: black;
+  color: white;
+}
+.divider {
+  height: 0px;
+  background: black;
+  border: 0.5px solid black;
+}
+.order-container {
+  padding: 0.5rem;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    flex-direction: column;
+  }
+}
+
+.product-img {
+  flex: 1;
+}
+
+.product-img > img {
+  height: 100%;
+  width: 100%;
+  max-width: 100px;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 2;
+}
+
+.product-quantity {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-qty-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 13px;
+}
+
+.product-qty-selector {
+  padding: 0.3rem;
+  text-align: center;
+  width: 4rem;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.product-delete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: fit-content;
+}
+
+.product-delete-icon {
+  cursor: pointer;
+  color: black;
+  font-size: 2rem;
+}
+
+.product-delete-icon:hover {
+  color: red;
+}
+
+.product-price-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.product-select {
+  padding: 0.3rem;
+}
+
+.order-container-placeholder {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Total Container */
+.total-container {
+  display: flex;
+  flex-direction: column;
+}
+.total-container-row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2rem;
+  margin: 1rem;
+}
+
+.total-container-name {
+  flex: 3;
+  font-size: 1rem;
+}
+.total-container-cost {
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 1rem;
+  flex: 1;
+}
+
+/* Address Card */
+
+.address-container {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .address-container {
+    flex-direction: column;
+  }
+}
+
+.detail-col {
+  flex: 1;
+}
+
+.address-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-form-row {
+  display: flex;
+  margin-bottom: 0.3rem;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 0.3rem;
+}
+
+.input-wrapper > label {
+  font-size: 8px;
+  margin-bottom: 0.2rem;
+}
+
+.input-wrapper > input {
+  font-size: 0.7rem;
+  flex: 1;
+  padding: 0.2rem;
+  margin-right: 0.2rem;
+  max-width: 10rem;
+  width: 100%;
+}
+
+.address-input-single {
+  width: 9rem;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+/* Order Button */
+
+.order-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-btn-container > button {
+  margin-left: 1rem;
+  position: relative;
+  top: 1px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.order-btn-container > button:hover {
+  background-color: black;
+  color: white;
+}
+
+.errorMsg {
+  display: block;
+  margin-bottom: 1rem;
+  color: red;
+}
+
+/* Fetched Orders */
+
+.fetched-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.fetched-order-name {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.fetched-order-name-heading {
+  margin: 0.2rem;
+}
+
+.fetched-order-name-subheading {
+  margin: 0;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+
+.fetched-item-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fetched-item-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fetched-item-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fetched-item-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  margin: 0;
+}
+
+.fetched-item-text {
+  margin: 0.1rem;
+}
