@@ -241,8 +241,6 @@ const orderSlice = createSlice({
       state.totalAmount.amount = state.shippingAmount.amount;
     },
     deleteProduct(state, action) {
-      // NOT REMOVING THE CORRECT ITEM
-
       // remove product order entry from order
       const id = action.payload;
       let tempArr = current(state.createdProducts);
