@@ -20,7 +20,6 @@ function RecordItem(props) {
         </div>
         <div className="fetched-item-row">
           <h3 className="fetched-order-name-heading">Items:</h3>
-          {/* <div className="fetched-order-name-total">Total: £100</div> */}
         </div>
         <div className="fetched-item-column">
           <ul className="fetched-item-list">
