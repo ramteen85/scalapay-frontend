@@ -25,7 +25,6 @@ function Navbar(props) {
   return (
     <Fragment>
       <header>
-        {/* <div className={classes['member-heading-title']}>Member Action Panel</div> */}
         <div className={classes['top-bar']}>
           <div className={classes['top-bar-leftcol']}>
             <ul className={classes['leftcol-list']}>
@@ -41,7 +40,6 @@ function Navbar(props) {
                   style={{ color: 'white' }}
                   key={'sidebar_toggle'}
                 />
-                {/* <Dropdown icon="bx bx-menu" key={'sidebar_toggle'} /> */}
               </li>
             </ul>
           </div>
