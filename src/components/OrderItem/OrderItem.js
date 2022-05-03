@@ -53,7 +53,6 @@ function OrderItem(props) {
 
   if (!isNaN(parseFloat(product?.price?.amount) * parseFloat(product?.quantity))) {
     isOpaque = { opacity: '1' };
-  } else {
   }
 
   return (
